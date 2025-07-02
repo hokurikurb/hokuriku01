@@ -99,7 +99,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #7c8081;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -130,7 +130,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.75em;
 		margin-bottom: 1em;
 		text-transform: uppercase;
@@ -1856,6 +1856,7 @@ input, select, textarea {
 		position: relative;
 	}
 
+		/*
 		.image:before {
 			background: url("images/overlay.png");
 			content: '';
@@ -1865,6 +1866,7 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
+		*/
 
 		.image.fit {
 			display: block;
@@ -1883,6 +1885,30 @@ input, select, textarea {
 			.image.featured img {
 				display: block;
 				width: 100%;
+			}
+
+		.image.half {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.image.half img {
+				display: block;
+				width: 50%;
+				margin: 0 auto;
+			}
+
+			@media screen and (max-width: 840px) {
+				.image.half {
+					display: block;
+					margin: 2em 0;
+				}
+
+				.image.half img {
+					display: block;
+					width: 80%;
+					margin: 0 auto;
+				}
 			}
 
 /* Icon */
@@ -2015,6 +2041,16 @@ input, select, textarea {
 	ul {
 		list-style: disc;
 		padding-left: 1em;
+	}
+
+		ul li {
+			padding-left: 0.5em;
+		}
+
+	ul.simple {
+		list-style: none;
+		padding-left: 1em;
+		margin-bottom: 0.5em;
 	}
 
 		ul li {
