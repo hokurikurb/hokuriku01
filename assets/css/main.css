@@ -180,6 +180,10 @@ input, select, textarea {
 		font-size: 0.9em;
 	}
 
+	.text-transform-none {
+		text-transform: none !important;
+	}
+
 /* Container */
 
 	.container {
