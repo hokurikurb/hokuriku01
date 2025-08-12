@@ -2633,6 +2633,15 @@ input, select, textarea {
 				margin: 2em 0 0 0;
 			}
 
+	#banner.mini {
+		padding-bottom: 3em;
+	}
+
+	#banner.mini .inner header,
+	#banner.mini .inner header h2 {
+		margin-bottom: 0;
+	}
+
 /* Main */
 
 	#main {
