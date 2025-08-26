@@ -184,6 +184,10 @@ input, select, textarea {
 		text-transform: none !important;
 	}
 
+	.text-left {
+		text-align: left;
+	}
+
 /* Container */
 
 	.container {
@@ -2045,6 +2049,9 @@ input, select, textarea {
 	ul {
 		list-style: disc;
 		padding-left: 1em;
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 		ul li {
@@ -2625,6 +2632,15 @@ input, select, textarea {
 			#banner .inner footer {
 				margin: 2em 0 0 0;
 			}
+
+	#banner.mini {
+		padding-bottom: 3em;
+	}
+
+	#banner.mini .inner header,
+	#banner.mini .inner header h2 {
+		margin-bottom: 0;
+	}
 
 /* Main */
 
