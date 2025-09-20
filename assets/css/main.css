@@ -3398,3 +3398,14 @@ input, select, textarea {
 			}
 
 	}
+
+/* Policies styles */
+#policies p,
+#policies ul,
+#policies h3 {
+	text-align: left;
+}
+
+#references ul {
+	margin: 0;
+}
