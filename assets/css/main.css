@@ -2252,6 +2252,15 @@ input, select, textarea {
 			padding: 0.5em 0;
 		}
 
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button.disabled,
+	.button.disabled {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+
 /* Wrapper */
 
 	.wrapper {
