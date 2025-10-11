@@ -1919,6 +1919,15 @@ input, select, textarea {
 				}
 			}
 
+		.image.logo {
+			margin-bottom: 0.5em;
+		}
+
+			.image.logo img {
+				background-color: white;
+				border-radius: 10px;
+			}
+
 /* Icon */
 
 	.icon {
