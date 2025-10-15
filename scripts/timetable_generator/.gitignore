@@ -1,0 +1,20 @@
+# Ignore bundler config
+/.bundle
+vendor/bundle
+
+Gemfile.lock
+
+# Ignore the build/data directory
+/build/*
+!/build/.keep
+/data/*
+!/data/.keep
+!/data/sample.csv
+
+# Ignore herb log
+/*.log
+
+# Ignore .DS_store file
+.DS_Store
+*~
+*.swp

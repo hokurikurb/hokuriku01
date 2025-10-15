@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <p>
+      <%= @talk[:talk_title] %><br />
+      <%= @talk[:speaker_name] %><br />
+      <img src="<%= @talk[:speaker_image_url] %>" alt="<%= @talk[:speaker_id] %>"><br />
+      <% if @talk[:speaker_sns_twitter] %>
+        <a href="<%= @talk[:speaker_sns_twitter_url] %>" target="_blank"><%= @talk[:speaker_sns_twitter] %></a><br />
+      <% end %>
+      <% if @talk[:speaker_sns_github] %>
+        <a href="<%= @talk[:speaker_sns_github_url] %>" target="_blank"><%= @talk[:speaker_sns_github] %></a><br />
+      <% end %>
+    </p>
+  </body>
+</html>
