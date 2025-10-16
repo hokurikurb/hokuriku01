@@ -1,234 +1,177 @@
 <!DOCTYPE html>
-<!--
-	Based on Twenty by HTML5 UP (but dropped tons of things to simplify)
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html lang="ja">
-  <head>
-    <title>北陸Ruby会議01発表者募集 | 北陸Ruby会議01</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <meta property="og:title" content="北陸Ruby会議01発表者募集" />
-    <meta
-      property="og:description"
-      content="北陸Ruby会議01の発表者を募集します"
-    />
-    <meta
-      property="og:image"
-      content="https://hokurikurb.github.io/hokuriku01/images/og-image.jpg"
-    />
-    <meta property="og:locale" content="ja_JP" />
-    <meta property="og:type" content="website" />
-  </head>
-  <body>
-    <div id="page-wrapper">
-      <!-- Header -->
-      <header id="header" class="alt">
-        <h1 id="logo" class="text-transform-none"><a href="index.html">北陸Ruby会議01</a></h1>
-        <nav id="nav">
-          <ul>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#schedule">Schedule</a></li>
-            <li><a href="cfp.html">CFP</a></li>
-            <li><a href="index.html#sponsors">Sponsors</a></li>
-            <li><a href="policies.html">Policies</a></li>
-            <li><a href="access.html">Access</a></li>
-            <li><a href="index.html#organizers">Organizers</a></li>
-          </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="北陸Ruby会議01" />
+  <meta property="og:description" content="北陸Ruby会議01の発表者募集" />
+  <meta property="og:image" content="https://hokurikurb.github.io/hokuriku01/images/og-image.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:type" content="website" />
+  <title>発表者募集 | 北陸Ruby会議01</title>
+  <script src="https://kit.fontawesome.com/5057ed789e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo"><img src="images/logo-horizontal.svg" alt="北陸Ruby会議"></a>
+        <nav class="nav" id="nav">
+                    <a href="index.html#about" class="nav-link">開催概要</a>
+                    <a href="index.html#schedule" class="nav-link">タイムテーブル</a>
+                    <a href="index.html#program" class="nav-link">プログラム</a>
+                    <a href="index.html#sponsors" class="nav-link">スポンサー</a>
+                    <a href="index.html#organizers" class="nav-link">運営</a>
+                    <a href="policies.html" class="nav-link">ポリシー</a>
+                    <a href="access.html" class="nav-link">アクセス</a>
         </nav>
-      </header>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="メニュー">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-      <!-- Banner -->
-      <section id="banner" class="mini">
-        <div class="inner">
-          <header>
-            <h2 class="text-transform-none">北陸Ruby会議01</h2>
-          </header>
-        </div>
-      </section>
+  <main class="subpage-content">
+    <section class="page-hero">
+      <div class="container">
+        <h1>発表者募集</h1>
+      </div>
+    </section>
 
-      <!-- Main -->
-      <article id="main">
-        <section id="cfp" class="wrapper style3 special container">
-          <header class="major">
-            <h2 class="text-transform-none">北陸Ruby会議01発表者募集</h2>
-          </header>
-          <p>
-            <strong>北陸Ruby会議01の発表者募集の応募受付は終了しました。<br />たくさんの応募ありがとうございました。</strong><br />
-            <br />
-            <br />
-            北陸Ruby会議01でスピーカー希望の方を以下の内容で募集します。<br />
-            <br />
-            北陸Ruby会議01のテーマは、「みんなの Ruby の使い方」です。 発表者・参加者のいろいろな Ruby の使い方の事例を紹介しあうことで、北陸における Ruby の活用の幅を広げ、Ruby を利活用する人口を増やしたいと考えています。<br />
-            <br />
-            発表内容としては、みなさんが Ruby を使って作ったものや企業での Ruby の利用事例など、幅広いみなさんの Ruby の使い方についてのお話をぜひお聞きしたいと考えています。 みなさんの発表の応募をお待ちしてます！
-          </p>
-
-          <h3 class="text-transform-none">北陸Ruby会議01開催概要</h3>
-          <p>
-            開催日: 2025年12月06日(土)<br />
-            会場: 石川県立図書館<br />
-            テーマ: みんなの Ruby の使い方<br />
-          </p>
-
-          <h3 class="text-transform-none">発表者募集要領</h3>
-          <table class="default">
-            <tr>
-              <td style="width: 40%;">発表時間</td>
-              <td class="text-left">
-                15分枠<br />
-                LT 枠(5分)
-              </td>
-            </tr>
-            <tr>
-              <td>発表形態</td>
-              <td class="text-left">
-                会場での発表 (オンラインはありません)<br />
-                シングルトラック
-              </td>
-            </tr>
-            <tr>
-              <td>発表募集数</td>
-              <td class="text-left">
-                15分枠: 5枠程度<br />
-                LT 枠: 8枠程度
-              </td>
-            </tr>
-            <tr>
-              <td>申込方法</td>
-              <td class="text-left">
-                以下の内容をフォームから提出してください。<br />
-                <br />
-                <strong>発表者概要</strong><br />
-                ・メールアドレス<br />
-                ・名前<br />
-                ・プロフィール<br />
-                <strong>発表概要</strong><br />
-                ・発表タイトル<br />
-                ・発表概要<br />
-                ・発表時間<br />
-                ・発表の詳細 (レビュー委員会向け)<br />
-                ・この発表を検討すべき理由と、そのテーマで発表する資格があることの説明 (レビュー委員会向け)
-                <br />
-                <br />
-                <a class="button primary disabled" href="https://forms.gle/1fq6BkvsnMTvePNw5" target="_blank">発表に応募する</a><br />
-                <br />
-                <small>Google フォームからの送信が難しい場合、メールでの申込みも受け付けています。「Google フォームからの送信が難しい場合」の記載内容を確認の上、申込みをお願いします。</small><br />
-                <br />
-              </td>
-            </tr>
-            <tr>
-              <td>発表申込締切</td>
-              <td class="text-left">2025/10/1(水) 正午必着</td>
-            </tr>
-            <tr>
-              <td>発表者の決定</td>
-              <td class="text-left">2025年10月中旬予定</td>
-            </tr>
-            <tr>
-              <td>費用負担</td>
-              <td class="text-left">発表に要する費用(会場までの旅費・交通費等)については、発表者さまのご負担となります。</td>
-            </tr>
+    <section class="page-content">
+      <div class="container">
+        <div class="page-text">
+          <p class="highlight"><strong>北陸Ruby会議01の発表者募集の応募受付は終了しました。たくさんの応募ありがとうございました。</strong></p>
+          
+          <p class="lead">北陸Ruby会議01でスピーカー希望の方を以下の内容で募集します。</p>
+          
+          <p>北陸Ruby会議01のテーマは、「みんなの Ruby の使い方」です。 発表者・参加者のいろいろな Ruby の使い方の事例を紹介しあうことで、北陸における Ruby の活用の幅を広げ、Ruby を利活用する人口を増やしたいと考えています。</p>
+          
+          <p>発表内容としては、みなさんが Ruby を使って作ったものや企業での Ruby の利用事例など、幅広いみなさんの Ruby の使い方についてのお話をぜひお聞きしたいと考えています。 みなさんの発表の応募をお待ちしてます！</p>
+          
+          <h2>北陸Ruby会議01開催概要</h2>
+          <ul class="page-list">
+            <li><strong>開催日:</strong> 2025年12月06日(土)</li>
+            <li><strong>会場:</strong> 石川県立図書館</li>
+            <li><strong>テーマ:</strong> みんなの Ruby の使い方</li>
+          </ul>
+          
+          <h2>発表者募集要領</h2>
+          
+          <table class="info-table">
+            <tbody>
+              <tr>
+                <th>発表時間</th>
+                <td>15分枠 / LT 枠(5分)</td>
+              </tr>
+              <tr>
+                <th>発表形態</th>
+                <td>会場での発表 (オンラインはありません) シングルトラック</td>
+              </tr>
+              <tr>
+                <th>発表募集数</th>
+                <td>15分枠: 5枠程度 / LT 枠: 8枠程度</td>
+              </tr>
+              <tr>
+                <th>申込方法</th>
+                <td>
+                  以下の内容をフォームから提出してください。<br><br>
+                  <strong>発表者概要</strong><br>
+                  ・メールアドレス<br>
+                  ・名前<br>
+                  ・プロフィール<br><br>
+                  <strong>発表概要</strong><br>
+                  ・発表タイトル<br>
+                  ・発表概要<br>
+                  ・発表時間<br>
+                  ・発表の詳細 (レビュー委員会向け)<br>
+                  ・この発表を検討すべき理由と、そのテーマで発表する資格があることの説明 (レビュー委員会向け)<br><br>
+                  <a href="https://forms.gle/1fq6BkvsnMTvePNw5" class="cta-link disabled">発表に応募する</a><br><br>
+                  Google フォームからの送信が難しい場合、メールでの申込みも受け付けています。「Google フォームからの送信が難しい場合」の記載内容を確認の上、申込みをお願いします。
+                </td>
+              </tr>
+              <tr>
+                <th>発表申込締切</th>
+                <td>2025/10/1(水) 正午必着</td>
+              </tr>
+              <tr>
+                <th>発表者の決定</th>
+                <td>2025年10月中旬予定</td>
+              </tr>
+              <tr>
+                <th>費用負担</th>
+                <td>発表に要する費用(会場までの旅費・交通費等)については、発表者さまのご負担となります。</td>
+              </tr>
+            </tbody>
           </table>
-
-          <h3 class="text-transform-none">発表申込時に書いていただくこと</h3>
-          <p>
-            <strong>発表者概要</strong><br />
-            発表者決定のご連絡、および発表内容をオフィシャルサイトに掲載するために使用します。<br />
-            <ul>
-              <li>メールアドレス</li>
-              <li>名前</li>
-              <li>プロフィール</li>
-            </ul>
-
-            <strong>発表概要</strong><br />
-            この内容をもとに発表者の審査を実施します。発表内容をオフィシャルサイトに掲載するためにも使用します。<br />
-            <br />
-            <table class="default">
+          
+          <h2>発表申込時に書いていただくこと</h2>
+          
+          <h3 class="subsection-title">発表者概要</h3>
+          <p>発表者決定のご連絡、および発表内容をオフィシャルサイトに掲載するために使用します。</p>
+          <ul class="page-list">
+            <li>メールアドレス</li>
+            <li>名前</li>
+            <li>プロフィール</li>
+          </ul>
+          
+          <h3 class="subsection-title">発表概要</h3>
+          <p>この内容をもとに発表者の審査を実施します。発表内容をオフィシャルサイトに掲載するためにも使用します。</p>
+          
+          <table class="info-table">
+            <tbody>
               <tr>
-                <td>発表タイトル</td>
-                <td class="text-left">
-                  参加者にも公開される発表のタイトルです。内容をイメージしやすいものが望ましいです。<br />
-                  60文字以内でお願いします。
-                </td>
+                <th>発表タイトル</th>
+                <td>参加者にも公開される発表のタイトルです。内容をイメージしやすいものが望ましいです。 60文字以内でお願いします。</td>
               </tr>
               <tr>
-                <td>発表概要</td>
-                <td class="text-left">
-                  参加者にも公開される発表の概要です。簡潔で魅力的な説明文を記載してください。<br />
-                  発表の構成や具体的な取り組み内容等を記載すると、魅力が伝わりやすくなります。<br />
-                  600文字以内でお願いします。
-                </td>
+                <th>発表概要</th>
+                <td>参加者にも公開される発表の概要です。簡潔で魅力的な説明文を記載してください。 発表の構成や具体的な取り組み内容等を記載すると、魅力が伝わりやすくなります。 600文字以内でお願いします。</td>
               </tr>
               <tr>
-                <td>発表時間</td>
-                <td class="text-left">15分枠、またはLT枠(5分)から選択してください。</td>
+                <th>発表時間</th>
+                <td>15分枠、またはLT枠(5分)から選択してください。</td>
               </tr>
               <tr>
-                <td>発表の詳細<br />(レビュー委員会向け)</td>
-                <td class="text-left">
-                  発表について、概要、成果、対象者など、関連する詳細があれば具体的に記載してください。<br />
-                  例えば、スライドの目次、そのスライドで話す内容です。もちろん予定で問題ありませんが、タイムテーブルの決定や内容が重複しているかどうかの判断材料にします。<br />
-                  複数人での登壇を希望される方は、複数人での登壇がわかる旨、記載してください。
-                </td>
-	      </tr>
-              <tr>
-                <td>この発表を検討すべき理由と、そのテーマで発表する資格があることの説明<br />(レビュー委員会向け)</td>
-                <td class="text-left">
-                  この発表を採択すべき理由と、あなたがそのテーマで講演するにふさわしい理由など、この発表がどれほど素晴らしいものになるのか、あなたの思いをアピールをしてください。<br />
-                  <br />
-                  例えば、以下のような内容です。<br />
-                  ・本発表は「XXX」の導入事例を通じ、開発効率化と運用改善の知見を示すものです。<br />
-                  ・発表者はコミッタとして長期にわたり「XXX」に貢献しています。
-                </td>
+                <th>発表の詳細(レビュー委員会向け)</th>
+                <td>発表について、概要、成果、対象者など、関連する詳細があれば具体的に記載してください。 例えば、スライドの目次、そのスライドで話す内容です。もちろん予定で問題ありませんが、タイムテーブルの決定や内容が重複しているかどうかの判断材料にします。 複数人での登壇を希望される方は、複数人での登壇がわかる旨、記載してください。</td>
               </tr>
-            </table>
-          </p>
-
-          <h3 class="text-transform-none">Google フォームからの送信が難しい場合</h3>
-          <p>
-            「発表者募集要領」の以下の各項目の内容を <a href="mailto:hokuriku.rb@gmail.com">hokuriku.rb@gmail.com</a> 宛に送付してください。<br />
-            主催者側で申込みメールを確認次第、申込を確認した旨をご連絡します。
-          </p>
-          <ul>
+              <tr>
+                <th>この発表を検討すべき理由と、そのテーマで発表する資格があることの説明(レビュー委員会向け)</th>
+                <td>この発表を採択すべき理由と、あなたがそのテーマで講演するにふさわしい理由など、この発表がどれほど素晴らしいものになるのか、あなたの思いをアピールをしてください。 例えば、以下のような内容です。<br>
+                ・本発表は「XXX」の導入事例を通じ、開発効率化と運用改善の知見を示すものです。<br>
+                ・発表者はコミッタとして長期にわたり「XXX」に貢献しています。</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <h2>Google フォームからの送信が難しい場合</h2>
+          <p>「発表者募集要領」の以下の各項目の内容を <a href="mailto:hokuriku.rb@gmail.com">hokuriku.rb@gmail.com</a> 宛に送付してください。<br>
+          主催者側で申込みメールを確認次第、申込を確認した旨をご連絡します。</p>
+          <ul class="page-list">
             <li>発表者概要</li>
             <li>発表概要</li>
           </ul>
+          
+          <div class="contact-info">
+            <h3>お問い合わせ先</h3>
+            <p>メールアドレス: <a href="mailto:hokuriku.rb@gmail.com">hokuriku.rb@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-          <h3 class="text-transform-none">お問い合わせ先</h3>
-          <p>
-          メールアドレス: <a href="mailto:hokuriku.rb@gmail.com">hokuriku.rb@gmail.com</a>
-          </p>
-        </section>
-      </article>
-
-      <section id="cta">
-      </section>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <ul class="copyright">
-          <li>
-            <a href="https://github.com/hokurikurb" target="_blank"
-              >&copy; hokuriku.rb</a
-            >
-          </li>
-          <li>
-            Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>
-          </li>
-        </ul>
-      </footer>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; <a href="https://github.com/hokurikurb">hokuriku.rb</a></p>
     </div>
-  </body>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>

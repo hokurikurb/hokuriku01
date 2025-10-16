@@ -1,241 +1,310 @@
 <!DOCTYPE html>
-<!--
-	Based on Twenty by HTML5 UP (but dropped tons of things to simplify)
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html lang="ja">
-  <head>
-    <title>北陸Ruby会議01</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="北陸Ruby会議01" />
-    <meta
-      property="og:description"
-      content="北陸Ruby会議01は「みんなのRubyの使い方」をテーマにした地域Ruby会議です"
-    />
-    <meta
-      property="og:image"
-      content="https://hokurikurb.github.io/hokuriku01/images/og-image.jpg"
-    />
+    <meta property="og:description" content="北陸Ruby会議01は「みんなのRubyの使い方」をテーマにした地域Ruby会議です。" />
+    <meta property="og:image" content="https://hokurikurb.github.io/hokuriku01/images/og-image.jpg" />
     <meta property="og:locale" content="ja_JP" />
     <meta property="og:type" content="website" />
-  </head>
-  <body class="index">
-    <div id="page-wrapper">
-      <!-- Header -->
-      <header id="header" class="alt">
-        <h1 id="logo" class="text-transform-none">
-          <a href="index.html">北陸Ruby会議01</a>
-        </h1>
-        <nav id="nav">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="cfp.html">CFP</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="policies.html">Policies</a></li>
-            <li><a href="access.html">Access</a></li>
-            <li><a href="#organizers">Organizers</a></li>
-          </ul>
-        </nav>
-      </header>
 
-      <!-- Banner -->
-      <section id="banner">
-        <div class="inner">
-          <header>
-            <h2 class="text-transform-none">北陸Ruby会議01</h2>
-          </header>
-          <br />
-          <strong>みんなのRubyの使い方</strong><br /><br />
-          <p>
-            <strong>December 6 (Sat), 2025</strong><br />
-            11:00 ~ 16:45
-            <br />
-            <br />
-            石川県立図書館 研修室
-            <br />
-            <br />
-            <span class="text-transform-none">#hokurikurk01</span>
-          </p>
-
-          <footer>
-            <ul class="buttons stacked">
-              <li>
-                <button class="button fit scrolly">
-                  Registration (準備中)
+    <title>北陸Ruby会議01「みんなのRubyの使い方」</title>
+    <script src="https://kit.fontawesome.com/5057ed789e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo"><img src="images/logo-horizontal.svg" alt="北陸Ruby会議"></a>
+                <nav class="nav" id="nav">
+                    <a href="#about" class="nav-link">開催概要</a>
+                    <a href="#schedule" class="nav-link">タイムテーブル</a>
+                    <a href="#program" class="nav-link">プログラム</a>
+                    <a href="#sponsors" class="nav-link">スポンサー</a>
+                    <a href="#organizers" class="nav-link">運営</a>
+                    <a href="policies.html" class="nav-link">ポリシー</a>
+                    <a href="access.html" class="nav-link">アクセス</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="メニュー">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
-              </li>
-            </ul>
-          </footer>
+            </div>
         </div>
-      </section>
+    </header>
 
-      <!-- Main -->
-      <article id="main">
-        <section id="about" class="wrapper style3 special container">
-          <header class="major">
-            <h2>概要</h2>
-          </header>
-          <strong>テーマ: みんなのRubyの使い方</strong><br /><br />
-          開催日時: 2025年12月6日 (土) 11:00 ~ 16:45<br />
-          懇親会: 17:45 ~ 19:45 (予定)<br />
-          開催場所: 石川県立図書館 研修室 <a href="access.html">交通アクセス・マップ</a><br />
-          SNSハッシュタグ: #hokurikurk01<br />
-        </section>
-
-        <section id="schedule" class="wrapper style3 special container">
-          <header class="major">
-            <h2>Schedule</h2>
-            スケジュールは現在調整中で、変更の可能性があります。
-          </header>
-          <table class="default">
-            <tr>
-              <td>10:20</td>
-              <td>開場 (予定)</td>
-            </tr>
-            <tr>
-              <td>11:00 ~ 11:10</td>
-              <td>オープニングセッション</td>
-            </tr>
-            <tr>
-              <td>11:10 ~ 16:35</td>
-              <td>調整中</td>
-            </tr>
-            <tr>
-              <td>16:35 ~ 16:45</td>
-              <td>クロージングセッション</td>
-            </tr>
-            <tr>
-              <td>17:45 ~ 19:45</td>
-              <td>懇親会 (予定)</td>
-            </tr>
-          </table>
-        </section>
-
-        <section id="sponsors" class="wrapper style3 special container">
-          <header class="major">
-            <h2>Sponsors</h2>
-          </header>
-          <div class="row">
-            <div class="col-3 col-6-narrower">
-              <a href="https://www.ashita-team.com/" class="image fit logo" target="_blank">
-                <img alt="株式会社あしたのチーム" src="images/logo_ashitanoteam.svg" />
-              </a>
-              <a class="bottom" href="https://www.ashita-team.com/" target="_blank">株式会社あしたのチーム</a>
+    <section class="hero">
+      <div class="hero-filter">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                  <img src="images/logo-vertical-white.svg" alt="北陸Ruby会議ロゴ"></h1>
+                <h2 class="hero-topic"><span>北陸Ruby会議01</span><br>みんなのRubyの使い方</h2>
+                <div class="hero-details">
+                    <div class="hero-detail">
+                        <span class="detail-label">日時</span>
+                        <span class="detail-value">2025.12.6 (Sat)</span>
+                    </div>
+                    <div class="hero-detail">
+                        <span class="detail-label">会場</span>
+                        <span class="detail-value">石川県立図書館</span>
+                    </div>
+                </div>
+                <a href="#" class="cta-button-skeleton">参加申込はこちらから</a>
             </div>
-            <div class="col-3 col-6-narrower">
-              <a href="https://agile.esm.co.jp/" class="image fit logo" target="_blank">
-                <img alt="株式会社永和システムマネジメント" src="images/logo_esm.png" />
-              </a>
-              <a href="https://agile.esm.co.jp/" target="_blank">株式会社永和システムマネジメント</a>
-            </div>
-            <div class="col-3 col-6-narrower">
-              <a href="https://www.clwit.co.jp/" class="image fit logo" target="_blank">
-                <img alt="株式会社クルウィット" src="images/logo_clwit.svg" />
-              </a>
-              <a href="https://www.clwit.co.jp/" target="_blank">株式会社クルウィット</a>
-            </div>
-            <div class="col-3 col-6-narrower">
-              <a href="https://bootcamp.fjord.jp/" class="image fit logo" target="_blank">
-                <img alt="フィヨルドブートキャンプ" src="images/logo_fjord.svg" />
-              </a>
-              <a href="https://bootcamp.fjord.jp/" target="_blank">フィヨルドブートキャンプ</a>
-            </div>
-            </a>
-          </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <section id="organizers" class="wrapper style3 special container">
-          <header class="major">
-            <h2>Organizers</h2>
-            北陸三県で活動する三つのRubyコミュニティが合同で主催・運営を行っています。
-          </header>
-          <div class="image half">
-            <img src="images/logo.png" />
-          </div>
-          <div>
-            富山:
-            <a href="https://toyamarb.github.io/" target="_blank">Toyama.rb</a
-            >・ 石川:
-            <a href="https://kzrb.org/" target="_blank">Kanazawa.rb</a>・ 福井:
-            <a href="https://fukuirb.connpass.com/" target="_blank">fukui.rb</a>
-            <br />
-            <small>※都道府県コード順</small>
-          </div>
-          <footer class="major">
-            <h3>実行委員長</h3>
-            <ul class="simple">
-              <li>
-                Kunihiko Ito
-                <a
-                  href="https://github.com/kunitoo"
-                  target="_blank"
-                  class="icon brands fa-github"
-                  >kunitoo</a
-                >
-                (Toyama.rb)
-              </li>
-              <li>
-                Tomokazu Kiyohara
-                <a
-                  href="https://github.com/kiyohara"
-                  target="_blank"
-                  class="icon brands fa-github"
-                  >kiyohara</a
-                >
-                (Kanazawa.rb)
-              </li>
-              <li>
-                Taketo Takashima
-                <a
-                  href="https://github.com/taketo1113"
-                  target="_blank"
-                  class="icon brands fa-github"
-                  >taketo1113</a
-                >
-                (fukui.rb)
-              </li>
-            </ul>
-          </footer>
-        </section>
-      </article>
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">開催概要</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    北陸Ruby会議は、北陸三県で活動する三つのRubyコミュニティが合同で主催・運営を行っています。<br>
+                    第一回目のテーマは「みんなのRubyの使い方」です。<br>
+                    <small><a href="cfp.html">発表者募集（締め切りました）</a></small>
+                </p>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3 class="info-title">日時</h3>
+                        <p class="info-text">2025年12月6日（土）<br>11:00 - 16:45</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="info-title">会場</h3>
+                        <p class="info-text">石川県立図書館 研修室<br><a href="access.html">交通アクセス・マップ</a></p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="info-title">参加費</h3>
+                        <p class="info-text">無料<br>事前登録制</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- CTA -->
-      <section id="cta">
-        <footer id="registration">
-          <ul class="buttons">
-            <li>
-              <button class="button primary">Registration (準備中)</button>
-            </li>
-          </ul>
-        </footer>
-      </section>
+    <section class="section section-alt" id="schedule">
+        <div class="container">
+            <h2 class="section-title">タイムテーブル</h2>
+            <p class="schedule-text">スケジュールは現在調整中で、変更の可能性があります。</p>
+            <div class="schedule-list">
+                <div class="schedule-item">
+                    <div class="schedule-time">10:20</div>
+                    <div class="schedule-content">
+                        <h3 class="schedule-title">開場 (予定)</h3>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">11:00 - 11:10</div>
+                    <div class="schedule-content">
+                        <h3 class="schedule-title">オープニングセッション</h3>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">11:10 - 16:35</div>
+                    <div class="schedule-content">
+                        <h3 class="schedule-title">調整中</h3>
+                    </div>
+                </div>
+                
+<!--
+                <div class="schedule-item">
+                    <div class="schedule-time">11:10 - 11:25</div>
+                    <div class="schedule-content">
+                        <h3 class="schedule-title"><a href="#SESSION-1">SESSION 1 セッションタイトルが入ります</a></h3>
+                        <p class="schedule-speaker">北陸 太郎</p> 
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-time">11:25 - 11:30</div>
+                    <div class="schedule-content">
+                        <h3 class="schedule-title"><a href="#LT-1">LT 1 LTタイトルが入ります</a></h3>
+                        <p class="schedule-speaker">北陸 太郎</p> 
+                    </div>
+                </div>
+-->
+                
+                <div class="schedule-item">
+                    <div class="schedule-time">16:35 - 16:45</div>
+                    <div class="schedule-content">
+                        <h3 class="schedule-title">クロージングセッション</h3>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">17:45 - 19:45</div>
+                    <div class="schedule-content">
+                        <h3 class="schedule-title">懇親会 (予定)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <ul class="copyright">
-          <li>
-            <a href="https://github.com/hokurikurb" target="_blank"
-              >&copy; hokuriku.rb</a
-            >
-          </li>
-          <li>
-            Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>
-          </li>
-        </ul>
-      </footer>
-    </div>
-  </body>
+    <section class="section" id="program">
+        <div class="container">
+            <h2 class="section-title">プログラム</h2>
+            <p class="schedule-text">プログラムは現在調整中で、近日公開予定です。</p>
+            
+<!--
+            <div id="sessions" class="program-subsection">
+                <h3 class="program-subsection-title">SESSION</h3>
+                
+                <div class="speakers-grid">
+                    <div class="speaker-card" id="SESSION-1">
+                        <div class="speaker-number">SESSION 1</div>
+                        <h3 class="speaker-title">セッションタイトルが入ります</h3>
+                        <p class="speaker-summary">セッション概要が入ります。</p>
+                        <div class="speaker-info">
+                            <div class="speaker-image">
+                                <img src="images/placeholder.svg" alt="発表者1">
+                            </div>
+                            <div class="speaker-details">
+                                <p class="speaker-name">北陸 太郎</p>
+                                <p class="speaker-bio">プロフィールが入ります。</p>
+                                <div class="speaker-social">
+                                    <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+-->
+
+<!--
+            <div id="lt" class="program-subsection">
+                <h3 class="program-subsection-title">LT</h3>
+                <div class="speakers-grid">
+                    <div class="speaker-card" id="LT-1">
+                        <div class="speaker-number">LT 1</div>
+                        <h3 class="speaker-title">LTタイトルが入ります</h3>
+                        <p class="speaker-summary">LT概要が入ります。</p>
+                        <div class="speaker-info">
+                            <div class="speaker-image">
+                                <img src="images/placeholder.svg" alt="LT発表者1">
+                            </div>
+                            <div class="speaker-details">
+                                <p class="speaker-name">北陸 太郎</p>
+                                <p class="speaker-bio">プロフィールが入ります。</p>
+                                <div class="speaker-social">
+                                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+-->
+            
+        </div>
+    </section>
+
+    <section class="section section-alt" id="sponsors">
+        <div class="container">
+            <h2 class="section-title">スポンサー</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <div class="sponsor-placeholder">
+                      <a href="https://www.ashita-team.com/">
+                        <img src="images/logo_ashitanoteam.svg" alt="株式会社あしたのチーム"><br>
+                        株式会社あしたのチーム
+                      </a>
+                    </div>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-placeholder">
+                      <a href="https://agile.esm.co.jp/">
+                        <img src="images/logo_esm.png" alt="株式会社永和システムマネジメント"><br>
+                        株式会社永和システムマネジメント
+                      </a>
+                    </div>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-placeholder">
+                      <a href="https://www.clwit.co.jp/">
+                        <img src="images/logo_clwit.svg" alt="株式会社クルウィット"><br>
+                        株式会社クルウィット
+                      </a>
+                    </div>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-placeholder">
+                      <a href="https://bootcamp.fjord.jp/">
+                        <img src="images/logo_fjord.svg" alt="フィヨルドブートキャンプ"><br>
+                        フィヨルドブートキャンプ
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="organizers">
+        <div class="container">
+            <h2 class="section-title">運営</h2>
+            <div class="organizers-content">
+                <p class="organizers-text">
+                    北陸三県で活動する三つのRubyコミュニティが合同で主催・運営を行っています。<br>
+                    <small>※都道府県コード順</small>
+                </p>
+                <div class="community-logos">
+                    <div class="community-logo-item">
+                      <a href="https://toyamarb.github.io/">
+                        <div class="community-logo">
+                            <img src="images/logo_toyamarb.png" alt="Toyama.rb">
+                            <p class="community-name">富山: Toyama.rb</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="community-logo-item">
+                      <a href="https://kzrb.org/">
+                        <div class="community-logo">
+                            <img src="images/logo_kanazawarb.png" alt="Kanazawa.rb">
+                            <p class="community-name">石川: Kanazawa.rb</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="community-logo-item">
+                      <a href="https://fukuirb.connpass.com/">
+                        <div class="community-logo">
+                            <img src="images/logo_fukuirb.png" alt="fukui.rb">
+                            <p class="community-name">福井: fukui.rb</p>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="organizers-info">
+                    <div class="organizer-item">
+                        <h3 class="organizer-title">実行委員長</h3>
+                        <ul>
+                          <li>Kunihiko Ito <a href="https://github.com/kunitoo"><i class="fa-brands fa-github"></i>kunitoo</a> (Toyama.rb)</li>
+                          <li>Tomokazu Kiyohara <a href="https://github.com/kiyohara"><i class="fa-brands fa-github"></i>kiyohara</a> (Kanazawa.rb)</li>
+                          <li>Taketo Takashima <a href="https://github.com/taketo1113"><i class="fa-brands fa-github"></i>taketo1113</a> (fukui.rb)</li>
+                        </ul>
+                    </div>
+                    <div class="organizer-item">
+                        <h3 class="organizer-title">運営スタッフ</h3>
+                        <p class="organizer-text">準備中です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; <a href="https://github.com/hokurikurb">hokuriku.rb</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
