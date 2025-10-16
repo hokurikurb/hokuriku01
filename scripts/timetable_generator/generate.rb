@@ -45,14 +45,20 @@ File.open(file_path, "rb:UTF-8", undef: :replace) do |f|
     # attr
     speaker_id = speaker_sns_github || speaker_sns_twitter
     speaker_image_url = "#{speaker_id}" # TODO
+
+    talk_abstract_html = ERB::Util.html_escape(talk_abstract).gsub(/\r\n|\r|\n/, "<br />")
+    speaker_profile_html = ERB::Util.html_escape(speaker_profile).gsub(/\r\n|\r|\n/, "<br />")
+
     speaker_sns_twitter_url = "https://x.com/#{speaker_sns_twitter}" if speaker_sns_twitter
     speaker_sns_github_url = "https://github.com/#{speaker_sns_github}" if speaker_sns_github
 
     talk = {
       talk_title:,
       talk_abstract:,
+      talk_abstract_html:,
       speaker_name:,
       speaker_profile:,
+      speaker_profile_html:,
       speaker_image_url:,
       speaker_sns_twitter:,
       speaker_sns_twitter_url:,
