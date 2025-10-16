@@ -511,6 +511,10 @@ a:hover { color: #555; }
   width: 180px;
   height: auto;
 }
+.sponsors-logo{
+  text-align: center;
+  margin-top: 3rem;
+}
 
 /* Organizers Section */
 .organizers-content {
