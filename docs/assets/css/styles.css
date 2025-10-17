@@ -871,6 +871,9 @@ a:hover { color: #555; }
   background-color: var(--bg-alt);
   border-radius: 8px;
 }
+.contact-info p{
+  margin-bottom: 0;
+}
 
 /* CFP Page Styles */
 .info-table {
