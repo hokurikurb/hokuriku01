@@ -236,6 +236,15 @@ a:hover { color: #555; }
   color: #fff;
 }
 
+.cta-button-skeleton {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.cta-button-skeleton:hover {
+  transform: none;
+}
+
 /* Section Styles */
 .section {
   padding: 5rem 0;
