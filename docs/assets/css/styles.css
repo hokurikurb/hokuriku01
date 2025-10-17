@@ -740,6 +740,10 @@ a:hover { color: #555; }
     font-size: 1.5rem;
   }
 
+  .page-content .page-text h2:first-child {
+    margin-top: 0;
+  }
+
   /* Responsive table styles */
   .info-table {
     font-size: 0.875rem;
@@ -755,7 +759,7 @@ a:hover { color: #555; }
   }
   
   .about-text{
-    text-align: left;
+    text-align: center;
   }
   .detail-label{
     width: 150px;
