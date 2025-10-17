@@ -265,6 +265,21 @@ a:hover { color: #555; }
   margin-bottom: 3rem;
   text-align: center;
 }
+.about-text-hashtag{
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 2rem 0 0;
+  text-align: center;
+}
+.about-text-hashtag span{
+  display: inline-block;
+  padding: 3px 12px;
+  margin-left: 10px;
+  background: var(--bg-alt);
+  border: solid 1px #DDD;
+  border-radius: 5px;
+  font-weight: bold;
+}
 
 .info-grid {
   display: grid;
