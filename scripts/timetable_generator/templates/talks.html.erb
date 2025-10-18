@@ -1,0 +1,44 @@
+<html>
+  <body>
+    <div>
+            <div id="sessions" class="program-subsection">
+                <h3 class="program-subsection-title">SESSION</h3>
+
+
+            </div>
+
+            <div id="lt" class="program-subsection">
+                <h3 class="program-subsection-title">LT</h3>
+
+
+            </div>
+
+<% @talks.each_with_index do |talk, index| %>
+                <div class="speakers-grid">
+                    <div class="speaker-card" id="<%= talk[:talk_type] %>-<%= index + 1 %>">
+                        <div class="speaker-number"><%= talk[:talk_type] %></div>
+                        <h3 class="speaker-title"><%= talk[:talk_title] %></h3>
+                        <p class="speaker-summary"><%= talk[:talk_abstract_html] %></p>
+                        <div class="speaker-info">
+                            <div class="speaker-image">
+                                <img src="<%= talk[:speaker_image_url] %>" alt="<%= talk[:speaker_id] %>">
+                            </div>
+                            <div class="speaker-details">
+                                <p class="speaker-name"><%= talk[:speaker_name] %></p>
+                                <p class="speaker-bio"><%= talk[:speaker_profile_html] %></p>
+                                <div class="speaker-social">
+<% if talk[:speaker_sns_github] %>
+                                    <a href="<%= talk[:speaker_sns_github_url] %>" target="_blank"><i class="fa-brands fa-github"></i></a>
+<% end %>
+<% if talk[:speaker_sns_twitter] %>
+                                    <a href="<%= talk[:speaker_sns_twitter_url] %>" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+<% end %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<% end %>
+    </div>
+  </body>
+</html>

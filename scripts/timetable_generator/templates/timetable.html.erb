@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h2 class="section-title">タイムテーブル</h2>
+
+<% @talks.each_with_index do |talk, index| %>
+                <div class="schedule-item">
+                    <div class="schedule-time">xx:xx - xx:xx</div>
+                    <div class="schedule-content">
+                        <h3 class="schedule-title"><a href="#<%= talk[:talk_type] %>-<%= index + 1 %>"><%= talk[:talk_type] %> <%= talk[:talk_title] %></a></h3>
+                        <p class="schedule-speaker"><%= talk[:speaker_name] %></p>
+                    </div>
+                </div>
+<% end %>
+  </body>
+</html>
