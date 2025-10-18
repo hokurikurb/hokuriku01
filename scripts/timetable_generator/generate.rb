@@ -37,14 +37,27 @@ File.open(file_path, "rb:UTF-8", undef: :replace) do |f|
     # csv
     talk_title = row[0]
     talk_abstract = row[1]
+    talk_time = row[2]
     speaker_name = row[3]
     speaker_profile = row[5]
-    speaker_sns_twitter = row[8]
-    speaker_sns_github = row[9]
+    speaker_image = row[7]
+    speaker_sns_twitter = row[9]
+    speaker_sns_github = row[10]
 
     # attr
     speaker_id = speaker_sns_github || speaker_sns_twitter
-    speaker_image_url = "#{speaker_id}" # TODO
+    speaker_image_url = "images/placeholder.svg" # default
+    if speaker_image
+      speaker_image_url = "images/speakers/#{speaker_image}"
+    end
+
+    if talk_time == "45分枠"
+      talk_type = "KEYNOTE"
+    elsif talk_time == "15分枠"
+      talk_type = "SESSION"
+    elsif talk_time == "LT 枠(5分)"
+      talk_type = "LT"
+    end
 
     talk_abstract_html = ERB::Util.html_escape(talk_abstract).gsub(/\r\n|\r|\n/, "<br />")
     speaker_profile_html = ERB::Util.html_escape(speaker_profile).gsub(/\r\n|\r|\n/, "<br />")
@@ -56,6 +69,8 @@ File.open(file_path, "rb:UTF-8", undef: :replace) do |f|
       talk_title:,
       talk_abstract:,
       talk_abstract_html:,
+      talk_time:,
+      talk_type:,
       speaker_name:,
       speaker_profile:,
       speaker_profile_html:,
@@ -75,17 +90,20 @@ File.open(file_path, "rb:UTF-8", undef: :replace) do |f|
   end
 end
 
-# Output: timetable page
-template_file_timetable = File.join("./templates/", "timetable.html.erb")
-File.open(template_file_timetable) do |template|
-  # bind template
-  html = ERB.new(template.read).result
+# Output: single page (timetable)
+template_names = ['timetable', 'talks']
+template_names.each do |template_name|
+  template_file = File.join("./templates/", "#{template_name}.html.erb")
+  File.open(template_file) do |template|
+    # bind template
+    html = ERB.new(template.read).result
 
-  # output file
-  output_file_name = "timetable.html"
-  output_file = File.join("./build/", output_file_name)
-  File.write(output_file, html)
-  print "Output: #{output_file}\n"
+    # output file
+    output_file_name = "#{template_name}.html"
+    output_file = File.join("./build/", output_file_name)
+    File.write(output_file, html)
+    print "Output: #{output_file}\n"
+  end
 end
 
 # Output: talk pages
