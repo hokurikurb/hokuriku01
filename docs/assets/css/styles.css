@@ -349,6 +349,30 @@ a:hover { color: #555; }
   transform: translateX(4px);
 }
 
+.schedule-item .schedule-item {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-left-width: 2px;
+  background: var(--bg-alt);
+}
+
+.schedule-item .schedule-item:last-child{
+  margin-bottom: 0;
+}
+
+.schedule-item .schedule-item:hover {
+  transform: translateX(2px);
+}
+
+.schedule-item .schedule-item .schedule-title {
+  font-size: 1rem;
+  margin-bottom: 0.125rem;
+}
+
+.schedule-item .schedule-item .schedule-speaker {
+  font-size: 0.8125rem;
+}
+
 .schedule-time {
   font-weight: 600;
   color: var(--primary-color);
@@ -399,6 +423,7 @@ a:hover { color: #555; }
 }
 
 .speaker-card {
+  margin-bottom: 1.5rem;
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   border-radius: 8px;
