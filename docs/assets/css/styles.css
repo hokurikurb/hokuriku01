@@ -761,6 +761,10 @@ a:hover { color: #555; }
   .speaker-social {
     justify-content: center;
   }
+
+  .team-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -998,4 +1002,69 @@ a:hover { color: #555; }
   background-color: #999;
   transform: none;
   box-shadow: none;
+}
+
+/* Team Page Styles */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.organizer-card {
+  padding: 1rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.organizer-card:hover{
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+.organizer-card a {
+  text-decoration: none;
+}
+
+.organizer-info {
+  font-weight: 500;
+}
+
+.organizer-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.organizer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.organizer-role {
+  color: #666;
+}
+
+.organizer-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.organizer-social {
+  display: flex;
+  gap: 1rem;
+}
+.organizer-social a {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+.organizer-social a:hover {
+  color: var(--primary-color);
 }
