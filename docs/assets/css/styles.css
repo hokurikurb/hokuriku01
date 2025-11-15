@@ -810,7 +810,7 @@ a:hover { color: #555; }
   .info-table th {
     width: 35%;
   }
-  
+
   .about-text{
     text-align: center;
   }
@@ -818,7 +818,7 @@ a:hover { color: #555; }
     width: 150px;
     margin: 0 auto;
   }
-  
+
   .page-hero{
     padding: 4rem 0 3rem;
   }
@@ -1067,4 +1067,16 @@ a:hover { color: #555; }
 }
 .organizer-social a:hover {
   color: var(--primary-color);
+}
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.registration > a {
+    display: inline-block;
+    width: 14rem;
 }
